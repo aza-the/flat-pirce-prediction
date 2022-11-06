@@ -1,5 +1,5 @@
 import csv
-
+import sys
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
@@ -194,3 +194,6 @@ def make_plot(history):
     plt.ylabel("Loss")
     plt.legend()
     plt.show()
+
+if __name__ == "__main__":
+    main(sys.argv[1])
